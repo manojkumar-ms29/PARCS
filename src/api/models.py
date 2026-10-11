@@ -38,6 +38,8 @@ class TelemetrySummaryResponse(BaseModel):
     date_range: DateRange | None = None
     datasets_available: DatasetsAvailable
     is_synthetic: bool = False
+    machine_provenance: dict[str, bool] = Field(default_factory=dict)
+    has_mixed_provenance: bool = False
     status: str = "ok"
     message: str = "Telemetry summary retrieved."
 

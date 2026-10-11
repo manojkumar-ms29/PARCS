@@ -82,6 +82,8 @@ class PARCSApiClient:
         self,
         machine_id: str | None = None,
         min_observations: int = 10,
+        reference_count: int | None = None,
+        reference_cutoff: str | None = None,
     ) -> list[dict[str, Any]]:
         """Retrieve machine statistical baselines."""
         if self.is_online():
@@ -89,6 +91,10 @@ class PARCSApiClient:
                 params: dict[str, Any] = {"min_observations": min_observations}
                 if machine_id:
                     params["machine_id"] = machine_id
+                if reference_count is not None:
+                    params["reference_count"] = reference_count
+                if reference_cutoff is not None:
+                    params["reference_cutoff"] = reference_cutoff
                 with httpx.Client(timeout=self.timeout) as client:
                     res = client.get(f"{self.base_url}/api/analytics/baselines", params=params)
                     if res.status_code == 200:
@@ -97,19 +103,36 @@ class PARCSApiClient:
                 logger.debug("API get_baselines failed, using fallback: %s", exc)
                 self._online_status = False
 
-        return self._local_fallback.get_baselines(machine_id=machine_id, min_observations=min_observations)
+        return self._local_fallback.get_baselines(
+            machine_id=machine_id,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+        )
 
     def get_anomalies(
         self,
         machine_id: str | None = None,
         threshold: float = 3.5,
+        min_observations: int = 10,
+        reference_count: int | None = None,
+        reference_cutoff: str | None = None,
+        evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Retrieve detected statistical anomalies."""
         if self.is_online():
             try:
-                params: dict[str, Any] = {"threshold": threshold}
+                params: dict[str, Any] = {
+                    "threshold": threshold,
+                    "min_observations": min_observations,
+                    "evaluation_scope": evaluation_scope,
+                }
                 if machine_id:
                     params["machine_id"] = machine_id
+                if reference_count is not None:
+                    params["reference_count"] = reference_count
+                if reference_cutoff is not None:
+                    params["reference_cutoff"] = reference_cutoff
                 with httpx.Client(timeout=self.timeout) as client:
                     res = client.get(f"{self.base_url}/api/analytics/anomalies", params=params)
                     if res.status_code == 200:
@@ -118,7 +141,14 @@ class PARCSApiClient:
                 logger.debug("API get_anomalies failed, using fallback: %s", exc)
                 self._online_status = False
 
-        return self._local_fallback.get_anomalies(machine_id=machine_id, threshold=threshold)
+        return self._local_fallback.get_anomalies(
+            machine_id=machine_id,
+            threshold=threshold,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
+        )
 
     def get_regressions(
         self,
@@ -126,6 +156,10 @@ class PARCSApiClient:
         threshold: float = 2.0,
         min_consecutive: int = 3,
         only_regressions: bool = False,
+        min_observations: int = 10,
+        reference_count: int | None = None,
+        reference_cutoff: str | None = None,
+        evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Retrieve sustained performance regressions."""
         if self.is_online():
@@ -134,9 +168,15 @@ class PARCSApiClient:
                     "threshold": threshold,
                     "min_consecutive": min_consecutive,
                     "only_regressions": only_regressions,
+                    "min_observations": min_observations,
+                    "evaluation_scope": evaluation_scope,
                 }
                 if machine_id:
                     params["machine_id"] = machine_id
+                if reference_count is not None:
+                    params["reference_count"] = reference_count
+                if reference_cutoff is not None:
+                    params["reference_cutoff"] = reference_cutoff
                 with httpx.Client(timeout=self.timeout) as client:
                     res = client.get(f"{self.base_url}/api/analytics/regressions", params=params)
                     if res.status_code == 200:
@@ -150,6 +190,10 @@ class PARCSApiClient:
             threshold=threshold,
             min_consecutive=min_consecutive,
             only_regressions=only_regressions,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
         )
 
     def get_correlations(
@@ -158,6 +202,12 @@ class PARCSApiClient:
         window_before_hours: float = 24.0,
         window_after_hours: float = 2.0,
         only_regressions: bool = True,
+        threshold: float = 2.0,
+        min_consecutive: int = 3,
+        min_observations: int = 10,
+        reference_count: int | None = None,
+        reference_cutoff: str | None = None,
+        evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Retrieve change correlation records."""
         if self.is_online():
@@ -166,9 +216,17 @@ class PARCSApiClient:
                     "window_before_hours": window_before_hours,
                     "window_after_hours": window_after_hours,
                     "only_regressions": only_regressions,
+                    "threshold": threshold,
+                    "min_consecutive": min_consecutive,
+                    "min_observations": min_observations,
+                    "evaluation_scope": evaluation_scope,
                 }
                 if machine_id:
                     params["machine_id"] = machine_id
+                if reference_count is not None:
+                    params["reference_count"] = reference_count
+                if reference_cutoff is not None:
+                    params["reference_cutoff"] = reference_cutoff
                 with httpx.Client(timeout=self.timeout) as client:
                     res = client.get(f"{self.base_url}/api/analytics/correlations", params=params)
                     if res.status_code == 200:
@@ -182,6 +240,12 @@ class PARCSApiClient:
             window_before_hours=window_before_hours,
             window_after_hours=window_after_hours,
             only_regressions=only_regressions,
+            threshold=threshold,
+            min_consecutive=min_consecutive,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
         )
 
     def get_changes(self, machine_id: str | None = None) -> list[dict[str, Any]]:

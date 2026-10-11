@@ -76,8 +76,12 @@ def main():
         help="Filter analytics and correlations strictly by machine identity to preserve isolation.",
     )
 
-    # Machine details & synthetic data check
-    is_synthetic_machine = selected_machine.startswith("DEMO-") or selected_machine.startswith("SYNTHETIC-") or summary.get("is_synthetic", False)
+    # Machine details & synthetic data check (machine-isolated provenance)
+    machine_provenance = summary.get("machine_provenance", {})
+    if selected_machine in machine_provenance:
+        is_synthetic_machine = bool(machine_provenance[selected_machine])
+    else:
+        is_synthetic_machine = bool(selected_machine.startswith("DEMO-") or selected_machine.startswith("SYNTHETIC-"))
 
     if is_synthetic_machine:
         st.warning(
@@ -87,6 +91,9 @@ def main():
         )
     else:
         st.info(f"ℹ️ **LOCAL SYSTEM TELEMETRY**: Showing observed telemetry records for `{selected_machine}`.")
+
+    if summary.get("has_mixed_provenance"):
+        st.caption("ℹ️ Dataset contains a mix of synthetic fixtures and local observations. Machine-specific provenance is displayed above.")
 
     # High-level metric cards
     col1, col2, col3, col4 = st.columns(4)

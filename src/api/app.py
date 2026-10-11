@@ -97,10 +97,17 @@ def get_telemetry_summary() -> TelemetrySummaryResponse:
 def get_baselines(
     machine_id: Annotated[str | None, Query(description="Optional machine ID filter")] = None,
     min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
+    reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
+    reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
 ) -> list[BaselineItem]:
     """Retrieve statistical baselines (Median, MAD, IQR, readiness) partitioned by machine."""
     try:
-        items = service.get_baselines(machine_id=machine_id, min_observations=min_observations)
+        items = service.get_baselines(
+            machine_id=machine_id,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+        )
         return [BaselineItem(**item) for item in items]
     except Exception as exc:
         logger.exception("Error calculating baselines: %s", exc)
@@ -119,10 +126,21 @@ def get_baselines(
 def get_anomalies(
     machine_id: Annotated[str | None, Query(description="Optional machine ID filter")] = None,
     threshold: Annotated[float, Query(gt=0, description="Modified Z-score cutoff")] = 3.5,
+    min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
+    reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
+    reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
+    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
 ) -> list[AnomalyItem]:
     """Retrieve sessions evaluated against machine baselines for anomalous deviations."""
     try:
-        items = service.get_anomalies(machine_id=machine_id, threshold=threshold)
+        items = service.get_anomalies(
+            machine_id=machine_id,
+            threshold=threshold,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
+        )
         return [AnomalyItem(**item) for item in items]
     except Exception as exc:
         logger.exception("Error detecting anomalies: %s", exc)
@@ -143,6 +161,10 @@ def get_regressions(
     threshold: Annotated[float, Query(gt=0, description="Modified Z-score harmful cutoff")] = 2.0,
     min_consecutive: Annotated[int, Query(ge=1, description="Required consecutive sessions")] = 3,
     only_regressions: Annotated[bool, Query(description="Filter only flagged regression sessions")] = False,
+    min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
+    reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
+    reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
+    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
 ) -> list[RegressionItem]:
     """Retrieve sustained directional regressions evaluated in chronological sequence."""
     try:
@@ -151,6 +173,10 @@ def get_regressions(
             threshold=threshold,
             min_consecutive=min_consecutive,
             only_regressions=only_regressions,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
         )
         return [RegressionItem(**item) for item in items]
     except Exception as exc:
@@ -172,6 +198,12 @@ def get_correlations(
     window_before_hours: Annotated[float, Query(ge=0, description="Look-back window hours")] = 24.0,
     window_after_hours: Annotated[float, Query(ge=0, description="Look-forward window hours")] = 2.0,
     only_regressions: Annotated[bool, Query(description="Evaluate only qualifying regressions")] = True,
+    threshold: Annotated[float, Query(gt=0, description="Modified Z-score harmful cutoff")] = 2.0,
+    min_consecutive: Annotated[int, Query(ge=1, description="Required consecutive sessions")] = 3,
+    min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
+    reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
+    reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
+    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
 ) -> list[CorrelationItem]:
     """Retrieve system changes matching regressions within the configured temporal window."""
     try:
@@ -180,6 +212,12 @@ def get_correlations(
             window_before_hours=window_before_hours,
             window_after_hours=window_after_hours,
             only_regressions=only_regressions,
+            threshold=threshold,
+            min_consecutive=min_consecutive,
+            min_observations=min_observations,
+            reference_count=reference_count,
+            reference_cutoff=reference_cutoff,
+            evaluation_scope=evaluation_scope,
         )
         return [CorrelationItem(**item) for item in items]
     except Exception as exc:
