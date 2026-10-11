@@ -21,6 +21,15 @@ from src.analytics.features import (
     SLEEPSTUDY_FEATURE_COLUMNS,
     build_sleepstudy_features,
 )
+from src.analytics.correlation import (
+    CHANGE_SCHEMA_COLUMNS,
+    CORRELATION_SCHEMA_COLUMNS,
+    DEFAULT_WINDOW_AFTER,
+    DEFAULT_WINDOW_BEFORE,
+    correlate_changes,
+    extract_changes_from_collector_result,
+    normalize_changes,
+)
 from src.analytics.regression import (
     DEFAULT_DIRECTION_MAP,
     DEFAULT_MIN_CONSECUTIVE,
@@ -49,4 +58,13 @@ __all__ = [
     "DEFAULT_MIN_CONSECUTIVE",
     "DEFAULT_DIRECTION_MAP",
     "REGRESSION_SCHEMA_COLUMNS",
+    # Change Correlation
+    "correlate_changes",
+    "normalize_changes",
+    "extract_changes_from_collector_result",
+    "DEFAULT_WINDOW_BEFORE",
+    "DEFAULT_WINDOW_AFTER",
+    "CHANGE_SCHEMA_COLUMNS",
+    "CORRELATION_SCHEMA_COLUMNS",
 ]
+
