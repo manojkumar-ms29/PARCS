@@ -26,6 +26,9 @@ from src.utils.serialization import serialize_df_records
 logger = logging.getLogger(__name__)
 
 
+VALID_EVALUATION_SCOPES: frozenset[str] = frozenset({"subsequent", "all"})
+
+
 class AnalyticsService:
     """Service providing data retrieval and analytics orchestration."""
 
@@ -281,6 +284,12 @@ class AnalyticsService:
         evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Detect and return statistical anomalies evaluated against historical reference baselines."""
+        if evaluation_scope not in VALID_EVALUATION_SCOPES:
+            raise ValueError(
+                f"Invalid evaluation_scope '{evaluation_scope}'. "
+                f"Supported values: {sorted(VALID_EVALUATION_SCOPES)}"
+            )
+
         sessions_df = self.load_sessions_df()
         if sessions_df.empty:
             return []
@@ -305,7 +314,18 @@ class AnalyticsService:
             )
             base_df = build_baseline(ref_df, min_observations=min_observations)
 
-            target_eval = eval_df if (evaluation_scope == "subsequent" and not eval_df.empty) else m_feat
+            if evaluation_scope == "subsequent":
+                if eval_df.empty:
+                    continue
+                target_eval = eval_df
+            elif evaluation_scope == "all":
+                target_eval = m_feat
+            else:
+                raise ValueError(
+                    f"Invalid evaluation_scope '{evaluation_scope}'. "
+                    f"Supported values: {sorted(VALID_EVALUATION_SCOPES)}"
+                )
+
             anom_df = detect_anomalies(target_eval, base_df, threshold=threshold)
             anomaly_dfs.append(anom_df)
 
@@ -327,6 +347,12 @@ class AnalyticsService:
         evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Detect and return sustained performance regressions evaluated against historical reference baselines."""
+        if evaluation_scope not in VALID_EVALUATION_SCOPES:
+            raise ValueError(
+                f"Invalid evaluation_scope '{evaluation_scope}'. "
+                f"Supported values: {sorted(VALID_EVALUATION_SCOPES)}"
+            )
+
         sessions_df = self.load_sessions_df()
         if sessions_df.empty:
             return []
@@ -351,7 +377,18 @@ class AnalyticsService:
             )
             base_df = build_baseline(ref_df, min_observations=min_observations)
 
-            target_eval = eval_df if (evaluation_scope == "subsequent" and not eval_df.empty) else m_feat
+            if evaluation_scope == "subsequent":
+                if eval_df.empty:
+                    continue
+                target_eval = eval_df
+            elif evaluation_scope == "all":
+                target_eval = m_feat
+            else:
+                raise ValueError(
+                    f"Invalid evaluation_scope '{evaluation_scope}'. "
+                    f"Supported values: {sorted(VALID_EVALUATION_SCOPES)}"
+                )
+
             reg_df = detect_regressions(
                 features=target_eval,
                 baseline=base_df,
@@ -383,6 +420,12 @@ class AnalyticsService:
         evaluation_scope: str = "subsequent",
     ) -> list[dict[str, Any]]:
         """Correlate detected regressions with system changes."""
+        if evaluation_scope not in VALID_EVALUATION_SCOPES:
+            raise ValueError(
+                f"Invalid evaluation_scope '{evaluation_scope}'. "
+                f"Supported values: {sorted(VALID_EVALUATION_SCOPES)}"
+            )
+
         reg_records = self.get_regressions(
             machine_id=machine_id,
             threshold=threshold,

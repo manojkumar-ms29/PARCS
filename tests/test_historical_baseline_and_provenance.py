@@ -396,3 +396,276 @@ class TestSyntheticDataProvenance:
         assert summary["machine_provenance"]["MY-LAPTOP"] is False
         assert summary["machine_provenance"]["DEMO-FIXTURE"] is True
         assert summary["has_mixed_provenance"] is True
+
+
+class TestEvaluationScopeFallbackPrevention:
+    """Tests verifying that subsequent-only evaluation never falls back to scoring reference observations."""
+
+    def test_reference_count_equals_observation_count_produces_empty_evaluation(self) -> None:
+        """1. reference_count equal to the observation count produces an empty subsequent evaluation partition."""
+        rows = [
+            {
+                "machine_id": "TEST-PC-EQUAL",
+                "start_time": f"2026-08-{10 + i:02d}T10:00:00Z",
+                "end_time": f"2026-08-{10 + i:02d}T10:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 95.0,
+                "battery_drain_percent": 2.0,
+                "battery_drain_rate_mw": 2400.0,
+            }
+            for i in range(12)
+        ]
+        df = build_sleepstudy_features(pd.DataFrame(rows))
+        ref_df, eval_df = AnalyticsService.partition_machine_features(df, reference_count=len(df))
+
+        assert len(ref_df) == 12
+        assert len(eval_df) == 0
+        assert eval_df.empty
+
+    def test_anomaly_service_does_not_score_reference_observations_when_evaluation_empty(self, monkeypatch) -> None:
+        """2. The anomaly service does not score the reference observations when evaluation partition is empty."""
+        rows = [
+            {
+                "machine_id": "TEST-PC-ANOM-EMPTY",
+                "start_time": f"2026-08-{10 + i:02d}T10:00:00Z",
+                "end_time": f"2026-08-{10 + i:02d}T10:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 95.0,
+                "battery_drain_percent": 2.0,
+                "battery_drain_rate_mw": 2400.0,
+            }
+            for i in range(12)
+        ]
+        test_df = pd.DataFrame(rows)
+        svc = AnalyticsService()
+        monkeypatch.setattr(svc, "load_sessions_df", lambda: test_df)
+
+        # Subsequent evaluation must NOT fall back to scoring m_feat; must return []
+        results = svc.get_anomalies(
+            machine_id="TEST-PC-ANOM-EMPTY",
+            reference_count=12,
+            evaluation_scope="subsequent",
+        )
+        assert results == []
+
+        # When evaluation_scope='all', scoring the full dataset is explicitly requested
+        all_results = svc.get_anomalies(
+            machine_id="TEST-PC-ANOM-EMPTY",
+            reference_count=12,
+            evaluation_scope="all",
+        )
+        assert len(all_results) > 0
+        assert {r["source_row_index"] for r in all_results} == set(range(12))
+
+    def test_regression_service_does_not_score_reference_observations_when_evaluation_empty(self, monkeypatch) -> None:
+        """3. The regression service does not score the reference observations when evaluation partition is empty."""
+        rows = [
+            {
+                "machine_id": "TEST-PC-REG-EMPTY",
+                "start_time": f"2026-08-{10 + i:02d}T10:00:00Z",
+                "end_time": f"2026-08-{10 + i:02d}T10:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 95.0,
+                "battery_drain_percent": 2.0,
+                "battery_drain_rate_mw": 2400.0,
+            }
+            for i in range(12)
+        ]
+        test_df = pd.DataFrame(rows)
+        svc = AnalyticsService()
+        monkeypatch.setattr(svc, "load_sessions_df", lambda: test_df)
+
+        # Subsequent evaluation must NOT fall back to scoring m_feat; must return []
+        results = svc.get_regressions(
+            machine_id="TEST-PC-REG-EMPTY",
+            reference_count=12,
+            only_regressions=False,
+            evaluation_scope="subsequent",
+        )
+        assert results == []
+
+        # Contrast with explicit evaluation_scope='all'
+        all_results = svc.get_regressions(
+            machine_id="TEST-PC-REG-EMPTY",
+            reference_count=12,
+            only_regressions=False,
+            evaluation_scope="all",
+        )
+        assert len(all_results) > 0
+        assert {r["source_row_index"] for r in all_results} == set(range(12))
+
+    def test_nonempty_evaluation_partition_detects_intended_degraded_observations(self, monkeypatch) -> None:
+        """4. A nonempty evaluation partition still detects the intended degraded observations."""
+        rows = [
+            {
+                "machine_id": "TEST-PC-NONEMPTY",
+                "start_time": f"2026-08-{10 + i:02d}T10:00:00Z",
+                "end_time": f"2026-08-{10 + i:02d}T10:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 95.0,
+                "battery_drain_percent": 2.0,
+                "battery_drain_rate_mw": 2400.0,
+            }
+            for i in range(12)
+        ] + [
+            {
+                "machine_id": "TEST-PC-NONEMPTY",
+                "start_time": f"2026-09-01T{10 + i:02d}:00:00Z",
+                "end_time": f"2026-09-01T{10 + i:02d}:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 50.0,
+                "battery_drain_percent": 5.0,
+                "battery_drain_rate_mw": 5500.0,
+            }
+            for i in range(4)
+        ]
+        test_df = pd.DataFrame(rows)
+        svc = AnalyticsService()
+        monkeypatch.setattr(svc, "load_sessions_df", lambda: test_df)
+
+        # Regressions in subsequent evaluation
+        reg_records = svc.get_regressions(
+            machine_id="TEST-PC-NONEMPTY",
+            reference_count=12,
+            only_regressions=False,
+            evaluation_scope="subsequent",
+        )
+        assert len(reg_records) > 0
+        # Only the 4 evaluation sessions should be evaluated (indices 12, 13, 14, 15)
+        eval_indices = {r["source_row_index"] for r in reg_records}
+        assert eval_indices == {12, 13, 14, 15}
+
+        # Verify sustained regressions are detected
+        flagged_regs = [r for r in reg_records if r["is_regression"]]
+        assert len(flagged_regs) > 0
+        assert all(r["baseline_median"] == 95.0 for r in flagged_regs if r["metric"] == "drips_percent")
+
+        # Anomalies in subsequent evaluation
+        anom_records = svc.get_anomalies(
+            machine_id="TEST-PC-NONEMPTY",
+            reference_count=12,
+            evaluation_scope="subsequent",
+        )
+        assert len(anom_records) > 0
+        anom_eval_indices = {r["source_row_index"] for r in anom_records}
+        assert anom_eval_indices == {12, 13, 14, 15}
+        flagged_anoms = [r for r in anom_records if r["is_anomaly"]]
+        assert len(flagged_anoms) > 0
+
+    def test_unready_baseline_produces_explicit_insufficient_history_when_evaluation_exists(self, monkeypatch) -> None:
+        """5. An unready baseline still produces explicit insufficient-history states when evaluation observations exist."""
+        # 4 reference observations (< min_observations=10 -> unready baseline)
+        # 2 evaluation observations
+        rows = [
+            {
+                "machine_id": "TEST-PC-UNREADY",
+                "start_time": f"2026-08-{10 + i:02d}T10:00:00Z",
+                "end_time": f"2026-08-{10 + i:02d}T10:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 95.0,
+                "battery_drain_percent": 2.0,
+                "battery_drain_rate_mw": 2400.0,
+            }
+            for i in range(4)
+        ] + [
+            {
+                "machine_id": "TEST-PC-UNREADY",
+                "start_time": f"2026-09-01T{10 + i:02d}:00:00Z",
+                "end_time": f"2026-09-01T{10 + i:02d}:30:00Z",
+                "duration_seconds": 1800.0,
+                "drips_percent": 55.0,
+                "battery_drain_percent": 4.5,
+                "battery_drain_rate_mw": 5200.0,
+            }
+            for i in range(2)
+        ]
+        test_df = pd.DataFrame(rows)
+        svc = AnalyticsService()
+        monkeypatch.setattr(svc, "load_sessions_df", lambda: test_df)
+
+        # Regressions: evaluation rows exist and baseline is unready
+        reg_records = svc.get_regressions(
+            machine_id="TEST-PC-UNREADY",
+            min_observations=10,
+            reference_count=4,
+            only_regressions=False,
+            evaluation_scope="subsequent",
+        )
+        assert len(reg_records) > 0
+        assert {r["source_row_index"] for r in reg_records} == {4, 5}
+        assert all(r["status"] == "insufficient_history" for r in reg_records)
+        assert all(r["is_regression"] is False for r in reg_records)
+
+        # Anomalies: evaluation rows exist and baseline is unready
+        anom_records = svc.get_anomalies(
+            machine_id="TEST-PC-UNREADY",
+            min_observations=10,
+            reference_count=4,
+            evaluation_scope="subsequent",
+        )
+        assert len(anom_records) > 0
+        assert {r["source_row_index"] for r in anom_records} == {4, 5}
+        assert all(r["status"] == "insufficient_history" for r in anom_records)
+        assert all(r["is_anomaly"] is False for r in anom_records)
+
+        # Default policy on sparse machine (N <= min_observations -> eval_df = df)
+        sparse_df = pd.DataFrame(rows[:4])
+        monkeypatch.setattr(svc, "load_sessions_df", lambda: sparse_df)
+        default_regs = svc.get_regressions(
+            machine_id="TEST-PC-UNREADY",
+            min_observations=10,
+            only_regressions=False,
+            evaluation_scope="subsequent",
+        )
+        assert len(default_regs) > 0
+        assert all(r["status"] == "insufficient_history" for r in default_regs)
+        assert all(r["is_regression"] is False for r in default_regs)
+
+    def test_existing_api_response_contracts_and_validation(self) -> None:
+        """6. Existing API response contracts remain compatible and invalid evaluation_scopes are rejected."""
+        from fastapi.testclient import TestClient
+        from src.api.app import app
+
+        client = TestClient(app)
+        svc = AnalyticsService()
+
+        # Service layer validation
+        with pytest.raises(ValueError, match="Invalid evaluation_scope"):
+            svc.get_anomalies(evaluation_scope="invalid_scope")
+
+        with pytest.raises(ValueError, match="Invalid evaluation_scope"):
+            svc.get_regressions(evaluation_scope="invalid_scope")
+
+        with pytest.raises(ValueError, match="Invalid evaluation_scope"):
+            svc.get_correlations(evaluation_scope="invalid_scope")
+
+        # API endpoint validation returns 422
+        res_anom = client.get("/api/analytics/anomalies?evaluation_scope=invalid_scope")
+        assert res_anom.status_code == 422
+
+        res_reg = client.get("/api/analytics/regressions?evaluation_scope=invalid_scope")
+        assert res_reg.status_code == 422
+
+        res_corr = client.get("/api/analytics/correlations?evaluation_scope=invalid_scope")
+        assert res_corr.status_code == 422
+
+        # API response contracts with subsequent and all
+        res_ok_sub = client.get("/api/analytics/regressions?evaluation_scope=subsequent")
+        assert res_ok_sub.status_code == 200
+        assert isinstance(res_ok_sub.json(), list)
+
+        res_ok_all = client.get("/api/analytics/regressions?evaluation_scope=all")
+        assert res_ok_all.status_code == 200
+        assert isinstance(res_ok_all.json(), list)
+
+        # When reference_count covers all sessions, subsequent API evaluation returns empty list
+        summary_res = client.get("/api/telemetry/summary")
+        assert summary_res.status_code == 200
+        total_sessions = summary_res.json()["total_sessions"]
+        if total_sessions > 0:
+            res_cov = client.get(
+                f"/api/analytics/regressions?evaluation_scope=subsequent&reference_count={total_sessions}"
+            )
+            assert res_cov.status_code == 200
+            assert res_cov.json() == []
+

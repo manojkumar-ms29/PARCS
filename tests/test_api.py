@@ -80,6 +80,10 @@ class TestAPIEndpoints:
         res = client.get("/api/analytics/anomalies?threshold=-1.0")
         assert res.status_code == 422
 
+    def test_anomalies_invalid_evaluation_scope(self) -> None:
+        res = client.get("/api/analytics/anomalies?evaluation_scope=invalid_scope")
+        assert res.status_code == 422
+
     def test_regressions_endpoint(self) -> None:
         response = client.get("/api/analytics/regressions?machine_id=DEMO-MACHINE-READY")
         assert response.status_code == 200
@@ -104,6 +108,8 @@ class TestAPIEndpoints:
         assert res1.status_code == 422
         res2 = client.get("/api/analytics/regressions?min_consecutive=0")
         assert res2.status_code == 422
+        res3 = client.get("/api/analytics/regressions?evaluation_scope=invalid_scope")
+        assert res3.status_code == 422
 
     def test_correlations_endpoint(self) -> None:
         response = client.get("/api/analytics/correlations?machine_id=DEMO-MACHINE-READY")
@@ -122,6 +128,8 @@ class TestAPIEndpoints:
     def test_correlations_invalid_window(self) -> None:
         res = client.get("/api/analytics/correlations?window_before_hours=-5.0")
         assert res.status_code == 422
+        res_scope = client.get("/api/analytics/correlations?evaluation_scope=invalid_scope")
+        assert res_scope.status_code == 422
 
     def test_changes_endpoint(self) -> None:
         response = client.get("/api/changes?machine_id=DEMO-MACHINE-READY")

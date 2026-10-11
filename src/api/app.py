@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 from datetime import datetime, timezone
-from typing import Annotated
+from typing import Annotated, Literal
 
 from fastapi import FastAPI, HTTPException, Query, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -129,7 +129,10 @@ def get_anomalies(
     min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
     reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
     reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
-    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
+    evaluation_scope: Annotated[
+        Literal["subsequent", "all"],
+        Query(description="Scope: 'subsequent' observations or 'all'"),
+    ] = "subsequent",
 ) -> list[AnomalyItem]:
     """Retrieve sessions evaluated against machine baselines for anomalous deviations."""
     try:
@@ -142,6 +145,11 @@ def get_anomalies(
             evaluation_scope=evaluation_scope,
         )
         return [AnomalyItem(**item) for item in items]
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
     except Exception as exc:
         logger.exception("Error detecting anomalies: %s", exc)
         raise HTTPException(
@@ -164,7 +172,10 @@ def get_regressions(
     min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
     reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
     reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
-    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
+    evaluation_scope: Annotated[
+        Literal["subsequent", "all"],
+        Query(description="Scope: 'subsequent' observations or 'all'"),
+    ] = "subsequent",
 ) -> list[RegressionItem]:
     """Retrieve sustained directional regressions evaluated in chronological sequence."""
     try:
@@ -179,6 +190,11 @@ def get_regressions(
             evaluation_scope=evaluation_scope,
         )
         return [RegressionItem(**item) for item in items]
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
     except Exception as exc:
         logger.exception("Error detecting regressions: %s", exc)
         raise HTTPException(
@@ -203,7 +219,10 @@ def get_correlations(
     min_observations: Annotated[int, Query(ge=1, description="Minimum observations for ready baseline")] = 10,
     reference_count: Annotated[int | None, Query(ge=1, description="Count of historical reference observations")] = None,
     reference_cutoff: Annotated[str | None, Query(description="Historical reference timestamp cutoff")] = None,
-    evaluation_scope: Annotated[str, Query(description="Scope: 'subsequent' observations or 'all'")] = "subsequent",
+    evaluation_scope: Annotated[
+        Literal["subsequent", "all"],
+        Query(description="Scope: 'subsequent' observations or 'all'"),
+    ] = "subsequent",
 ) -> list[CorrelationItem]:
     """Retrieve system changes matching regressions within the configured temporal window."""
     try:
@@ -220,6 +239,11 @@ def get_correlations(
             evaluation_scope=evaluation_scope,
         )
         return [CorrelationItem(**item) for item in items]
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
     except Exception as exc:
         logger.exception("Error correlating changes: %s", exc)
         raise HTTPException(
