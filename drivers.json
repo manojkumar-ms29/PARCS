@@ -1,0 +1,1546 @@
+﻿[
+    {
+        "DeviceName":  "WAN Miniport (SSTP)",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "SWD\\MSRRAS\\MS_SSTPMINIPORT"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\MSRRAS\\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}"
+    },
+    {
+        "DeviceName":  "Local Print Queue",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "PRINTQUEUE",
+        "DeviceID":  "SWD\\PRINTENUM\\{D94E5C27-5B42-4FE3-BAC4-82A3BE5CB6DD}"
+    },
+    {
+        "DeviceName":  "Local Print Queue",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "PRINTQUEUE",
+        "DeviceID":  "SWD\\PRINTENUM\\{B58C763F-9404-4938-9A6F-D7DFE9AE3DDA}"
+    },
+    {
+        "DeviceName":  "Local Print Queue",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "PRINTQUEUE",
+        "DeviceID":  "SWD\\PRINTENUM\\{5CD804D0-3675-4CD6-89E2-21CCD9AC2DB1}"
+    },
+    {
+        "DeviceName":  "Local Print Queue",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "PRINTQUEUE",
+        "DeviceID":  "SWD\\PRINTENUM\\PRINTQUEUES"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\MMDEVAPI\\MICROSOFTGSWAVETABLESYNTH"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\RADIO\\BLUETOOTH_BCF4D4F51DA6"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\RADIO\\{E6DE3438-0E73-4354-92C7-4183F0FD105C}"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\RADIO\\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}"
+    },
+    {
+        "DeviceName":  "Generic software device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "SWD\\MSDAS\\{CE958E9A-424F-4C88-86F4-11314821E75A}"
+    },
+    {
+        "DeviceName":  "Voice Clarity",
+        "Manufacturer":  "Microsoft Corporation",
+        "DriverVersion":  "1.0.4.7057",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOPROCESSINGOBJECT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{96BEDF2C-18CB-4A15-B821-5E95ED0FEA61}#VOCAEFFECTPACK\u00261\u002630058E9E\u00260"
+    },
+    {
+        "DeviceName":  "Computer Device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "COMPUTER",
+        "DeviceID":  "SWD\\COMPUTER\\MFG_HP\u0026FAM_103C_5335M7_HP_VICTUS\u0026PROD_VICTUS_BY_HP_GAMING_LAPTOP_15-FB0XX\u0026SKU_788X9PA#ACJ"
+    },
+    {
+        "DeviceName":  "Remote Desktop Device Redirector Bus",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\RDPBUS\\0000"
+    },
+    {
+        "DeviceName":  "Plug and Play Software Device Enumerator",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.4202",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\SYSTEM\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft System Management BIOS Driver",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\MSSMBIOS\\0000"
+    },
+    {
+        "DeviceName":  "NDIS Virtual Network Adapter Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\NDISVIRTUALBUS\\0000"
+    },
+    {
+        "DeviceName":  "AMD Crash Defender",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "23.19.0.6",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\AMDLOG\\0000"
+    },
+    {
+        "DeviceName":  "NVIDIA Virtual Audio Device (Wave Extensible) (WDM)",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "4.92.0.0",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "ROOT\\UNNAMED_DEVICE\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Basic Render Driver",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\BASICRENDER\\0000"
+    },
+    {
+        "DeviceName":  "System Firmware",
+        "Manufacturer":  "HP Inc.",
+        "DriverVersion":  "15.22.0.0",
+        "DriverDate":  null,
+        "DeviceClass":  "FIRMWARE",
+        "DeviceID":  "UEFI\\RES_{D165ADC8-588F-4CD5-B8E0-945D71DCB6C4}\\0"
+    },
+    {
+        "DeviceName":  "Microsoft UEFI-Compliant System",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI_HAL\\UEFI\\0"
+    },
+    {
+        "DeviceName":  "AMD Micro PEP Device",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "1.0.43.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\AMDI0005\\1"
+    },
+    {
+        "DeviceName":  "UCM-UCSI ACPI Device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "UCM",
+        "DeviceID":  "ACPI\\USBC000\\0"
+    },
+    {
+        "DeviceName":  "HID-compliant wireless radio controls",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\AMDI0051\\3\u00261E2B37A7\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "AMD Wireless Button Driver",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "1.0.0.5",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "ACPI\\AMDI0051\\0"
+    },
+    {
+        "DeviceName":  "NVIDIA Platform Controllers and Framework",
+        "Manufacturer":  "NVIDIA",
+        "DriverVersion":  "32.0.16.1534",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWAREDEVICE",
+        "DeviceID":  "ACPI\\NVDA0820\\NPCF"
+    },
+    {
+        "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C14\\AOD"
+    },
+    {
+        "DeviceName":  "Motherboard resources",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C02\\90"
+    },
+    {
+        "DeviceName":  "ACPI Lid",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C0D\\2\u0026DABA3FF\u00260"
+    },
+    {
+        "DeviceName":  "ACPI Thermal Zone",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\THERMALZONE\\THRM"
+    },
+    {
+        "DeviceName":  "Microsoft AC Adapter",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "BATTERY",
+        "DeviceID":  "ACPI\\ACPI0003\\2\u0026DABA3FF\u00260"
+    },
+    {
+        "DeviceName":  "Microsoft ACPI-Compliant Control Method Battery",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "BATTERY",
+        "DeviceID":  "ACPI\\PNP0C0A\\2\u0026DABA3FF\u00260"
+    },
+    {
+        "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C14\\0"
+    },
+    {
+        "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C14\\SARDEV"
+    },
+    {
+        "DeviceName":  "ACPI Wake Alarm",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\ACPI000E\\2\u0026DABA3FF\u00260"
+    },
+    {
+        "DeviceName":  "Trusted Platform Module 2.0",
+        "Manufacturer":  "(Standard)",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SECURITYDEVICES",
+        "DeviceID":  "ACPI\\MSFT0101\\1"
+    },
+    {
+        "DeviceName":  "Microsoft Input Configuration Device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\ELAN0787\u0026COL04\\4\u0026C563DA4\u00260\u00260003"
+    },
+    {
+        "DeviceName":  "ELAN PrecisionTouchpad Filter Driver",
+        "Manufacturer":  "ELAN",
+        "DriverVersion":  "22.2.48.1",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\ELAN0787\u0026COL03\\4\u0026C563DA4\u00260\u00260002"
+    },
+    {
+        "DeviceName":  "ELAN HID Class Filter Driver",
+        "Manufacturer":  "ELAN HID Device",
+        "DriverVersion":  "22.2.48.1",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\ELAN0787\u0026COL02\\4\u0026C563DA4\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "ELAN Input Device",
+        "Manufacturer":  "ELAN",
+        "DriverVersion":  "22.2.48.1",
+        "DriverDate":  null,
+        "DeviceClass":  "MOUSE",
+        "DeviceID":  "HID\\ELAN0787\u0026COL01\\4\u0026C563DA4\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "I2C HID Device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "ACPI\\ELAN0787\\1"
+    },
+    {
+        "DeviceName":  "AMD I2C Controller",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "1.2.0.124",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\AMDI0010\\3"
+    },
+    {
+        "DeviceName":  "AMD GPIO Controller",
+        "Manufacturer":  "Advanced Micro Devices, Inc",
+        "DriverVersion":  "2.2.0.133",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\AMDI0030\\0"
+    },
+    {
+        "DeviceName":  "High precision event timer",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0103\\2\u0026DABA3FF\u00260"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\C"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\B"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\A"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\9"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\8"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\7"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\6"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\5"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\4"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\3"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\2"
+    },
+    {
+        "DeviceName":  "AMD Processor",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "PROCESSOR",
+        "DeviceID":  "ACPI\\AUTHENTICAMD_-_AMD64_FAMILY_25_MODEL_80_-_AMD_RYZEN_5_5600H_WITH_RADEON_GRAPHICS_________\\1"
+    },
+    {
+        "DeviceName":  "ACPI Processor Container Device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\ACPI0010\\1"
+    },
+    {
+        "DeviceName":  "ACPI Power Button",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C0C\\AA"
+    },
+    {
+        "DeviceName":  "HP Insights Analytics",
+        "Manufacturer":  "HP",
+        "DriverVersion":  "4.2.2494.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{DBF3223D-8A64-4DAE-903E-E2FAD8D45BC8}#HPANALYTICSSOFTWARE\u00264\u002636204CB3\u00260"
+    },
+    {
+        "DeviceName":  "HP Application Driver Component",
+        "Manufacturer":  "HP",
+        "DriverVersion":  "1.87.4769.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{30E20916-51CC-469C-AD2D-EAEEE7624B3B}#FUSIONSOFTWARE.10.0...16299\u00264\u002636204CB3\u00260"
+    },
+    {
+        "DeviceName":  "HP Application Driver",
+        "Manufacturer":  "HP",
+        "DriverVersion":  "1.66.3710.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\HPIC0003\\3\u002611583659\u00260"
+    },
+    {
+        "DeviceName":  "HP Omen Driver Component",
+        "Manufacturer":  "HP",
+        "DriverVersion":  "1.0.838.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{66D8F8CC-8457-4F44-A11E-F9D31FC93DAD}#OMENFUSIONSOFTWARE\u00264\u002627A78F8A\u00261"
+    },
+    {
+        "DeviceName":  "Generic software component",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{2ABAC65E-84B2-4DBD-8AB1-2A2894991813}#HPINCVIGEMBUSOMENFUSIONSOFTWARE\u00264\u002627A78F8A\u00261"
+    },
+    {
+        "DeviceName":  "HP Omen Driver",
+        "Manufacturer":  "HP",
+        "DriverVersion":  "1.0.705.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\HPIC0004\\3\u002611583659\u00260"
+    },
+    {
+        "DeviceName":  "Motherboard resources",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C02\\700"
+    },
+    {
+        "DeviceName":  "Motherboard resources",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C02\\15"
+    },
+    {
+        "DeviceName":  "System board",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C01\\C8"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1671\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C7"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1670\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C6"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166F\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C5"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166E\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C4"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166D\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C3"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166C\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C2"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166B\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C1"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_166A\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u0026C0"
+    },
+    {
+        "DeviceName":  "Standard PS/2 Keyboard",
+        "Manufacturer":  "(Standard keyboards)",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "KEYBOARD",
+        "DeviceID":  "ACPI\\HPQ8001\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "Microsoft ACPI-Compliant Embedded Controller",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C09\\1"
+    },
+    {
+        "DeviceName":  "System speaker",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0800\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "System CMOS/real time clock",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0B00\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "System timer",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0100\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "Direct memory access controller",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0200\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "Programmable interrupt controller",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0000\\4\u002634FF65F\u00260"
+    },
+    {
+        "DeviceName":  "PCI standard ISA bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_790E\u0026SUBSYS_790E1022\u0026REV_51\\3\u002611583659\u00260\u0026A3"
+    },
+    {
+        "DeviceName":  "AMD SMBus",
+        "Manufacturer":  "Advanced Micro Devices, Inc",
+        "DriverVersion":  "5.12.0.44",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_790B\u0026SUBSYS_790B1022\u0026REV_51\\3\u002611583659\u00260\u0026A0"
+    },
+    {
+        "DeviceName":  "Motherboard resources",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0C02\\4\u002612C9051D\u00260"
+    },
+    {
+        "DeviceName":  "Audio Endpoint",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOENDPOINT",
+        "DeviceID":  "SWD\\MMDEVAPI\\{0.0.0.00000000}.{6D33C4DA-CB40-475F-A091-0B566064CDC9}"
+    },
+    {
+        "DeviceName":  "Sound Research Audio Effects Component",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "2.0.11.38",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOPROCESSINGOBJECT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{CE55C9E8-5DDF-4346-9C42-6B72AA38EF7C}#SEAPO\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "Realtek Audio Universal Service",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "1.0.766.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKSRV\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "Realtek OVWrap2 Component",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "11.0.6000.37",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKOVWRAP2\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "Realtek Audio Effects Component",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "13.590.1241.312",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOPROCESSINGOBJECT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKINTAPO\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "Realtek Audio Effects Component",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "13.590.1241.312",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOPROCESSINGOBJECT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{C3A63EDD-2D27-4B66-B155-5E94B43D926A}#REALTEKAPO\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "HP Audio Hardware Support Application",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "11.0.6000.322",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{9A4A8283-35D3-4A69-AA19-AA29E9046185}#BOAUDIOCONTROLHSA\u00266\u002621934767\u00260"
+    },
+    {
+        "DeviceName":  "Realtek High Definition Audio",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "6.0.9692.1",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "HDAUDIO\\FUNC_01\u0026VEN_10EC\u0026DEV_0245\u0026SUBSYS_103C8A3D\u0026REV_1000\\5\u00269765B59\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "High Definition Audio Controller",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_15E3\u0026SUBSYS_8A3D103C\u0026REV_00\\4\u002612C9051D\u00260\u00260641"
+    },
+    {
+        "DeviceName":  "Audio Endpoint",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOENDPOINT",
+        "DeviceID":  "SWD\\MMDEVAPI\\{0.0.1.00000000}.{669BC266-2FBB-4572-9638-17F95EFB0CE5}"
+    },
+    {
+        "DeviceName":  "Realtek Audio Effects Component",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "13.590.1241.312",
+        "DriverDate":  null,
+        "DeviceClass":  "AUDIOPROCESSINGOBJECT",
+        "DeviceID":  "SWD\\DRIVERENUM\\{ED49AB84-ECC2-40B6-A151-541CE7C017E6}#REALTEKINTAPO\u00266\u00262745688D\u00260"
+    },
+    {
+        "DeviceName":  "AMD Audio Device",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "6.0.1.44",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "ACP\\VEN_1022\u0026DEV_15E2\u0026SUBSYS_103C8A3D\\5\u0026F59B512\u00260\u002604"
+    },
+    {
+        "DeviceName":  "ACP HDA Node",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "ACP\\DEVTYPE_0001\u0026DEVREV_0000\u0026VEN_1022\u0026DEV_15E2\u0026SUBSYS_103C8A3D\u0026REV_01\\5\u0026F59B512\u00260\u002601"
+    },
+    {
+        "DeviceName":  "AMD Audio CoProcessor",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "6.0.1.85",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_15E2\u0026SUBSYS_8A3D103C\u0026REV_01\\4\u002612C9051D\u00260\u00260541"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_03\u0026COL02\\8\u002632E8C63C\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_03\u0026COL01\\8\u002632E8C63C\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "USB Input Device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "USB\\VID_0B05\u0026PID_1910\u0026MI_03\\7\u0026374B8275\u00261\u00260003"
+    },
+    {
+        "DeviceName":  "Keyboard_Filter_01",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "{A65C87F9-BE02-4ED9-92EC-012D416169FA}\\KEYBOARDFILTER\\9\u00261FDFC780\u00260\u002601"
+    },
+    {
+        "DeviceName":  "TUF GAMING M3",
+        "Manufacturer":  "ASUSTeK Computer Inc.",
+        "DriverVersion":  "1.0.47.0",
+        "DriverDate":  null,
+        "DeviceClass":  "KEYBOARD",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_02\\8\u0026320A67F4\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "USB Input Device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "USB\\VID_0B05\u0026PID_1910\u0026MI_02\\7\u0026374B8275\u00261\u00260002"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_01\\8\u0026E332A32\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "USB Input Device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "USB\\VID_0B05\u0026PID_1910\u0026MI_01\\7\u0026374B8275\u00261\u00260001"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL06\\8\u002625F6B677\u00260\u00260005"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL05\\8\u002625F6B677\u00260\u00260004"
+    },
+    {
+        "DeviceName":  "HID-compliant system controller",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL04\\8\u002625F6B677\u00260\u00260003"
+    },
+    {
+        "DeviceName":  "HID-compliant consumer control device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL03\\8\u002625F6B677\u00260\u00260002"
+    },
+    {
+        "DeviceName":  "HID-compliant vendor-defined device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL02\\8\u002625F6B677\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "Mouse_Filter_01",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "{DD0188D0-4609-4F6D-BCD7-D1C3547A0293}\\MOUSEFILTER\\9\u00263639455A\u00260\u002601"
+    },
+    {
+        "DeviceName":  "TUF GAMING M3",
+        "Manufacturer":  "ASUSTeK Computer Inc.",
+        "DriverVersion":  "1.0.70.0",
+        "DriverDate":  null,
+        "DeviceClass":  "MOUSE",
+        "DeviceID":  "HID\\VID_0B05\u0026PID_1910\u0026MI_00\u0026COL01\\8\u002625F6B677\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "USB Input Device",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "HIDCLASS",
+        "DeviceID":  "USB\\VID_0B05\u0026PID_1910\u0026MI_00\\7\u0026374B8275\u00261\u00260000"
+    },
+    {
+        "DeviceName":  "USB Composite Device",
+        "Manufacturer":  "(Standard USB Host Controller)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "USB\\VID_0B05\u0026PID_1910\\6\u00261CBC73CA\u00260\u00261"
+    },
+    {
+        "DeviceName":  "USB Root Hub (USB 3.0)",
+        "Manufacturer":  "(Standard USB HUBs)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "USB\\ROOT_HUB30\\5\u00261664BF7C\u00260\u00260"
+    },
+    {
+        "DeviceName":  "USB xHCI Compliant Host Controller",
+        "Manufacturer":  "Generic USB xHCI Host Controller",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1639\u0026SUBSYS_8A3D103C\u0026REV_00\\4\u002612C9051D\u00260\u00260441"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth LE Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTH\\MS_BTHLE\\8\u002628692992\u00260\u00263"
+    },
+    {
+        "DeviceName":  "Bluetooth Device (Personal Area Network)",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "BTH\\MS_BTHPAN\\8\u002628692992\u00260\u00262"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth Hands-Free Audio device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "BTHHFENUM\\BTHHFPAUDIO\\A\u002627521542\u00260\u002697"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth Hands-Free Profile AudioGateway role",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "BTHENUM\\{0000111E-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth Avrcp Transport Driver",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth Avrcp Transport Driver",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth A2dp Source",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "BTHENUM\\{0000110B-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Bluetooth Device",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTHENUM\\DEV_6055560BA562\\9\u002645ECD1D\u00260\u0026BLUETOOTHDEVICE_6055560BA562"
+    },
+    {
+        "DeviceName":  "RFCOMM COM",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "BTHENUM\\{DF21FE2C-2515-4FDB-8886-F12C4D67927C}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "WATCH",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "BTHENUM\\{99999999-9999-9999-9999-999999999999}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Bluetooth Peripheral Device",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "BTHENUM\\{00001801-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Bluetooth Peripheral Device",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "BTHENUM\\{00001800-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Device Identification Service",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTHENUM\\{00001200-0000-1000-8000-00805F9B34FB}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "oppointeraction",
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "BTHENUM\\{0000079A-D102-11E1-9B23-00025B00A5A5}_VID\u0026000102B0_PID\u00260000\\9\u002645ECD1D\u00260\u00266055560BA562_C00000000"
+    },
+    {
+        "DeviceName":  "Microsoft Bluetooth Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTH\\MS_BTHBRB\\8\u002628692992\u00260\u00261"
+    },
+    {
+        "DeviceName":  "Bluetooth Device (RFCOMM Protocol TDI)",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "BTH\\MS_RFCOMM\\8\u002628692992\u00260\u00260"
+    },
+    {
+        "DeviceName":  "MediaTek Bluetooth Adapter",
+        "Manufacturer":  "Mediatek Inc.",
+        "DriverVersion":  "1.1037.0.433",
+        "DriverDate":  null,
+        "DeviceClass":  "BLUETOOTH",
+        "DeviceID":  "USB\\VID_0489\u0026PID_E0E0\u0026MI_00\\7\u002611291C62\u00260\u00260000"
+    },
+    {
+        "DeviceName":  "USB Composite Device",
+        "Manufacturer":  "(Standard USB Host Controller)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "USB\\VID_0489\u0026PID_E0E0\\000000000"
+    },
+    {
+        "DeviceName":  "USB Root Hub (USB 3.0)",
+        "Manufacturer":  "(Standard USB HUBs)",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "USB\\ROOT_HUB30\\5\u00262EFDE726\u00260\u00260"
+    },
+    {
+        "DeviceName":  "USB xHCI Compliant Host Controller",
+        "Manufacturer":  "Generic USB xHCI Host Controller",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "USB",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1639\u0026SUBSYS_8A3D103C\u0026REV_00\\4\u002612C9051D\u00260\u00260341"
+    },
+    {
+        "DeviceName":  "AMD PSP 10.0 Device",
+        "Manufacturer":  "Advanced Micro Devices Inc.",
+        "DriverVersion":  "5.27.0.0",
+        "DriverDate":  null,
+        "DeviceClass":  "SECURITYDEVICES",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_15DF\u0026SUBSYS_8A3D103C\u0026REV_00\\4\u002612C9051D\u00260\u00260241"
+    },
+    {
+        "DeviceName":  "AMD High Definition Audio Device",
+        "Manufacturer":  "Advanced Micro Devices",
+        "DriverVersion":  "10.0.1.30",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "HDAUDIO\\FUNC_01\u0026VEN_1002\u0026DEV_AA01\u0026SUBSYS_00AA0100\u0026REV_1007\\5\u00261DF1D891\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "High Definition Audio Bus",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "25.30.0.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1002\u0026DEV_1637\u0026SUBSYS_8A3D103C\u0026REV_00\\4\u002612C9051D\u00260\u00260141"
+    },
+    {
+        "DeviceName":  "Generic PnP Monitor",
+        "Manufacturer":  "(Standard monitor types)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "MONITOR",
+        "DeviceID":  "DISPLAY\\AUO2992\\5\u00261B8460C5\u00260\u0026UID512"
+    },
+    {
+        "DeviceName":  "AMD-Windows Support Components",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "31.0.21925.1001",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\AMDWIN\u00265\u00261B8460C5\u00260"
+    },
+    {
+        "DeviceName":  "AMD-OpenCL User Mode Driver",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "31.0.21925.1001",
+        "DriverDate":  null,
+        "DeviceClass":  "SOFTWARECOMPONENT",
+        "DeviceID":  "SWD\\DRIVERENUM\\AMDOCL\u00265\u00261B8460C5\u00260"
+    },
+    {
+        "DeviceName":  "AMD Radeon(TM) Graphics",
+        "Manufacturer":  "Advanced Micro Devices, Inc.",
+        "DriverVersion":  "31.0.21925.1001",
+        "DriverDate":  null,
+        "DeviceClass":  "DISPLAY",
+        "DeviceID":  "PCI\\VEN_1002\u0026DEV_1638\u0026SUBSYS_8A3D103C\u0026REV_C6\\4\u002612C9051D\u00260\u00260041"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1635\u0026SUBSYS_16351022\u0026REV_00\\3\u002611583659\u00260\u002641"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1632\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u002640"
+    },
+    {
+        "DeviceName":  "Disk drive",
+        "Manufacturer":  "(Standard disk drives)",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "DISKDRIVE",
+        "DeviceID":  "SCSI\\DISK\u0026VEN_NVME\u0026PROD_KXG80ZNV512G_KIO\\5\u0026D588E52\u00260\u0026000000"
+    },
+    {
+        "DeviceName":  "Standard NVM Express Controller",
+        "Manufacturer":  "Standard NVM Express Controller",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SCSIADAPTER",
+        "DeviceID":  "PCI\\VEN_1E0F\u0026DEV_0010\u0026SUBSYS_00011E0F\u0026REV_01\\4\u0026AC7D6AB\u00260\u00260014"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1634\u0026SUBSYS_14531022\u0026REV_00\\3\u002611583659\u00260\u002614"
+    },
+    {
+        "DeviceName":  "Realtek PCIE CardReader",
+        "Manufacturer":  "Realtek Semiconductor Corp.",
+        "DriverVersion":  "10.0.22631.21370",
+        "DriverDate":  null,
+        "DeviceClass":  "MTD",
+        "DeviceID":  "PCI\\VEN_10EC\u0026DEV_5228\u0026SUBSYS_8A3D103C\u0026REV_01\\00000001004CE00000"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1634\u0026SUBSYS_14531022\u0026REV_00\\3\u002611583659\u00260\u002612"
+    },
+    {
+        "DeviceName":  "Microsoft Wi-Fi Direct Virtual Adapter",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\5\u002614E482C8\u00260\u002612"
+    },
+    {
+        "DeviceName":  "Microsoft Wi-Fi Direct Virtual Adapter",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\5\u002614E482C8\u00260\u002611"
+    },
+    {
+        "DeviceName":  "MediaTek Wi-Fi 6E MT7922 (RZ616) 160MHz PCIe Adapter",
+        "Manufacturer":  "MediaTek, Inc.",
+        "DriverVersion":  "3.4.0.1046",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "PCI\\VEN_14C3\u0026DEV_0616\u0026SUBSYS_E0CB105B\u0026REV_00\\4\u002675A1E93\u00260\u00260011"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1634\u0026SUBSYS_14531022\u0026REV_00\\3\u002611583659\u00260\u002611"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1632\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u002610"
+    },
+    {
+        "DeviceName":  "Realtek Gaming GbE Family Controller",
+        "Manufacturer":  "Realtek",
+        "DriverVersion":  "1168.19.704.2024",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "PCI\\VEN_10EC\u0026DEV_8168\u0026SUBSYS_8A3D103C\u0026REV_16\\01000000684CE00000"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1634\u0026SUBSYS_14531022\u0026REV_00\\3\u002611583659\u00260\u00260A"
+    },
+    {
+        "DeviceName":  "NVIDIA High Definition Audio",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "1.4.6.3",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "HDAUDIO\\FUNC_01\u0026VEN_10DE\u0026DEV_00A0\u0026SUBSYS_103C8A3D\u0026REV_1001\\5\u00261B5848DC\u00260\u00260001"
+    },
+    {
+        "DeviceName":  "High Definition Audio Controller",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_10DE\u0026DEV_2291\u0026SUBSYS_8A3D103C\u0026REV_A1\\4\u00261C5D7D4\u00260\u00260109"
+    },
+    {
+        "DeviceName":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+        "Manufacturer":  "NVIDIA",
+        "DriverVersion":  "32.0.16.1692",
+        "DriverDate":  null,
+        "DeviceClass":  "DISPLAY",
+        "DeviceID":  "PCI\\VEN_10DE\u0026DEV_25A2\u0026SUBSYS_8A3D103C\u0026REV_A1\\4\u00261C5D7D4\u00260\u00260009"
+    },
+    {
+        "DeviceName":  "PCI Express Root Port",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1633\u0026SUBSYS_14531022\u0026REV_00\\3\u002611583659\u00260\u002609"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1632\u0026SUBSYS_00000000\u0026REV_00\\3\u002611583659\u00260\u002608"
+    },
+    {
+        "DeviceName":  "PCI standard host CPU bridge",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "PCI\\VEN_1022\u0026DEV_1630\u0026SUBSYS_8A3D103C\u0026REV_00\\3\u002611583659\u00260\u002600"
+    },
+    {
+        "DeviceName":  "PCI Express Root Complex",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI\\PNP0A08\\0"
+    },
+    {
+        "DeviceName":  "Microsoft ACPI-Compliant System",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ACPI_HAL\\PNP0C08\\0"
+    },
+    {
+        "DeviceName":  "ACPI x64-based PC",
+        "Manufacturer":  "(Standard computers)",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "COMPUTER",
+        "DeviceID":  "ROOT\\ACPI_HAL\\0000"
+    },
+    {
+        "DeviceName":  "Charge Arbitration Driver",
+        "Manufacturer":  "(Standard system devices)",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\CAD\\0000"
+    },
+    {
+        "DeviceName":  "UMBus Root Bus Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\UMBUS\\0000"
+    },
+    {
+        "DeviceName":  "AMD Streaming Audio Device",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "1.0.0.9",
+        "DriverDate":  null,
+        "DeviceClass":  "MEDIA",
+        "DeviceID":  "ROOT\\AMDSAFD\u0026FUN_01\u0026REV_01\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Kernel Debug Network Adapter",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8521",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "ROOT\\KDNIC\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Storage Spaces Controller",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9444",
+        "DriverDate":  null,
+        "DeviceClass":  "SCSIADAPTER",
+        "DeviceID":  "ROOT\\SPACEPORT\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Virtual Drive Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1591",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\VDRVROOT\\0000"
+    },
+    {
+        "DeviceName":  "Composite Bus Enumerator",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1150",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\COMPOSITEBUS\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Hyper-V Virtualization Infrastructure Driver",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\VID\\0000"
+    },
+    {
+        "DeviceName":  "VirtualBox Host-Only Ethernet Adapter",
+        "Manufacturer":  "Oracle Corporation",
+        "DriverVersion":  "7.2.8.23730",
+        "DriverDate":  null,
+        "DeviceClass":  "NET",
+        "DeviceID":  "ROOT\\NET\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Hypervisor Service",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.8972",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\HVSERVICE\\0000"
+    },
+    {
+        "DeviceName":  "AMD Link Controller Emulation",
+        "Manufacturer":  "AMD",
+        "DriverVersion":  "23.19.0.1",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\AMDXE\\0000"
+    },
+    {
+        "DeviceName":  "Microsoft Basic Display Driver",
+        "Manufacturer":  "(Standard display types)",
+        "DriverVersion":  "10.0.26100.8521",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\BASICDISPLAY\\0000"
+    },
+    {
+        "DeviceName":  "Volume",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.5074",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUME",
+        "DeviceID":  "STORAGE\\VOLUME\\{4B287E9E-5A43-11F1-90BC-806E6F6E6963}#0000007499500000"
+    },
+    {
+        "DeviceName":  "Volume",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.5074",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUME",
+        "DeviceID":  "STORAGE\\VOLUME\\{4B287E9E-5A43-11F1-90BC-806E6F6E6963}#0000007463F00000"
+    },
+    {
+        "DeviceName":  "Generic volume shadow copy",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUMESNAPSHOT",
+        "DeviceID":  "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT5"
+    },
+    {
+        "DeviceName":  "Generic volume shadow copy",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.1",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUMESNAPSHOT",
+        "DeviceID":  "STORAGE\\VOLUMESNAPSHOT\\HARDDISKVOLUMESNAPSHOT4"
+    },
+    {
+        "DeviceName":  "Volume",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.5074",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUME",
+        "DeviceID":  "STORAGE\\VOLUME\\{4B287E9E-5A43-11F1-90BC-806E6F6E6963}#0000000011500000"
+    },
+    {
+        "DeviceName":  "Volume",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.5074",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUME",
+        "DeviceID":  "STORAGE\\VOLUME\\{4B287E9E-5A43-11F1-90BC-806E6F6E6963}#000000000C900000"
+    },
+    {
+        "DeviceName":  "Volume",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.5074",
+        "DriverDate":  null,
+        "DeviceClass":  "VOLUME",
+        "DeviceID":  "STORAGE\\VOLUME\\{4B287E9E-5A43-11F1-90BC-806E6F6E6963}#0000000000100000"
+    },
+    {
+        "DeviceName":  "Volume Manager",
+        "Manufacturer":  "Microsoft",
+        "DriverVersion":  "10.0.26100.9278",
+        "DriverDate":  null,
+        "DeviceClass":  "SYSTEM",
+        "DeviceID":  "ROOT\\VOLMGR\\0000"
+    },
+    {
+        "DeviceName":  null,
+        "Manufacturer":  null,
+        "DriverVersion":  null,
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "HTREE\\ROOT\\0"
+    },
+    {
+        "DeviceName":  null,
+        "Manufacturer":  null,
+        "DriverVersion":  "2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1",
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "OneNote (Desktop) - Protected"
+    },
+    {
+        "DeviceName":  null,
+        "Manufacturer":  null,
+        "DriverVersion":  "2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1",
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "OneNote (Desktop)"
+    },
+    {
+        "DeviceName":  null,
+        "Manufacturer":  null,
+        "DriverVersion":  "2:10.0,2:6.3,2:6.2,2:6.1,2:6.0,2:5.2,2:5.1",
+        "DriverDate":  null,
+        "DeviceClass":  null,
+        "DeviceID":  "Microsoft Print to PDF"
+    }
+]

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Environment & Credentials
+.env
+.env.local
+*.pem
+
+# Logs & Databases
+logs/*.log
+*.sqlite3
+
+# Data directory contents (keep folder structure)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/analytics/*
+!data/analytics/.gitkeep
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
