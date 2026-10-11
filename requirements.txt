@@ -1,5 +1,10 @@
-# Project dependencies
+# PARCS Dependencies
 duckdb>=0.9
 pandas>=2.0
 pyarrow>=14.0
 pytest>=7.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+httpx>=0.25.0
+streamlit>=1.30.0
+pydantic>=2.0.0
