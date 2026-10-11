@@ -1,7 +1,8 @@
 """PARCS Analytics Module.
 
 Provides feature engineering, machine-specific statistical baselines,
-and explainable anomaly detection for Modern Standby telemetry.
+explainable anomaly detection, and sustained regression detection for
+Modern Standby telemetry.
 """
 
 from src.analytics.anomaly import (
@@ -20,6 +21,13 @@ from src.analytics.features import (
     SLEEPSTUDY_FEATURE_COLUMNS,
     build_sleepstudy_features,
 )
+from src.analytics.regression import (
+    DEFAULT_DIRECTION_MAP,
+    DEFAULT_MIN_CONSECUTIVE,
+    DEFAULT_REGRESSION_THRESHOLD,
+    REGRESSION_SCHEMA_COLUMNS,
+    detect_regressions,
+)
 
 __all__ = [
     # Feature Engineering
@@ -35,4 +43,10 @@ __all__ = [
     "detect_anomalies",
     "DEFAULT_ANOMALY_THRESHOLD",
     "ANOMALY_SCHEMA_COLUMNS",
+    # Regression Detection
+    "detect_regressions",
+    "DEFAULT_REGRESSION_THRESHOLD",
+    "DEFAULT_MIN_CONSECUTIVE",
+    "DEFAULT_DIRECTION_MAP",
+    "REGRESSION_SCHEMA_COLUMNS",
 ]
